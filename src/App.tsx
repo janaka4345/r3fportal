@@ -1,12 +1,11 @@
 import "./App.css";
 import Canvasnew from "./comp/Canvasnew";
 function App() {
-  return;
-  <>
-    <div className="App">
+  return (
+    <>
       <Canvasnew />;
-    </div>
-  </>;
+    </>
+  );
 }
 
 export default App;

@@ -5,6 +5,7 @@ export default function Canvasnew() {
   return (
     <>
       <Canvas
+        flat
         // shadows={true}
         camera={{
           fov: 45,
