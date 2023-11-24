@@ -1,6 +1,5 @@
-import { Center, OrbitControls, useHelper } from "@react-three/drei";
+import { Center, OrbitControls, Sparkles, useHelper } from "@react-three/drei";
 import { Canvas, extend } from "@react-three/fiber";
-import Model from "./Model";
 import { useRef } from "react";
 import { DirectionalLightHelper } from "three";
 import Modeljsx from "./Modeljsx";
@@ -20,10 +19,17 @@ export default function Experience() {
         castShadow
       />
 
-      {/* <Model /> */}
       <Center>
         <Modeljsx />
       </Center>
+      <Sparkles
+        count={40}
+        speed={0.5}
+        size={6}
+        noise={[5, 2, 1]}
+        scale={[4, 2, 4]}
+        position={[0, 1, 0]}
+      />
     </>
   );
 }
